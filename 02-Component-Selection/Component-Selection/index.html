@@ -831,8 +831,8 @@
 <p><em>Table 1: Individual component selection (prox sensor)</em></p>
 <p><strong>A-Proximity Sensor</strong> <strong>[Proximity Sensor Component]</strong> </p>
 <blockquote>
-<p>It needs to detect a nearby hand/body; analog output; works at 5 V; supports custom active conditioning.
-1. TCRT5000 element (IR LED + phototransistor)</p>
+<p>It needs to detect a nearby hand/body; analog output; works at 5 V; supports custom active conditioning.<br>
+1. TCRT5000 element (IR LED + phototransistor)<br></p>
 </blockquote>
 <pre><code>![TCRT5000](TCRT5000.jpg)
 
@@ -1016,23 +1016,42 @@
 </ol>
 <p><strong>Choice:</strong> Option 1: MCP6002</p>
 <p><strong>Rationale:</strong> Meets performance with minimal power and gives two amps for gain + active LPF, it is also the least expensive option.</p>
-<p><strong>C-Voltage regulators</strong> <strong>[Power Components]</strong> </p>
+<p><em>Table 3: Individual component selection (Voltage Regulators)</em>
+<strong>C-Voltage regulators</strong> <strong>[Power Components]</strong> </p>
 <blockquote>
-<p>We need a 6V and a 5V voltage regulator to step down from 9 or 12V.
-1. LM2596 <strong>6V</strong></p>
+<p>We need a 6V and a 5V voltage regulator to step down from 9 or 12V. <br></p>
 </blockquote>
-<pre><code>![](LM2596.jpg)
-
-* $6.97/each
-* [Link to LM2596](https://www.digikey.com/en/products/detail/texas-instruments/LM2596S-5.0-NOPB/334842?utm_source=chatgpt.com)
-
-| Pros                                                            | Cons                |
-| --------------------------------------------------------------- | ------------------- |
-| Capable of 3 amp output                                                  | Large size |
-| Adjustable version fives votage flexibility  | Input Voltage limited to 40V           |
-|
-</code></pre>
 <ol>
+<li>
+<p>LM2596 <strong>6V</strong></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../LM2596.jpg" data-desc-position="bottom"><img alt="LM2596" src="../LM2596.jpg"></a></p>
+<ul>
+<li>$6.97/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/texas-instruments/LM2596S-5.0-NOPB/334842?utm_source=chatgpt.com">Link to LM2596</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Capable of 3 amp output</td>
+<td>Large size</td>
+</tr>
+<tr>
+<td>Adjustable version fives votage flexibility</td>
+<td>Input Voltage limited to 40V</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
 <li>
 <p>TPS564201DDCR <strong>6V</strong></p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../TPS564201DDCR.jpg" data-desc-position="bottom"><img alt="" src="../TPS564201DDCR.jpg"></a></p>
