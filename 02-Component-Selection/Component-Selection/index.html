@@ -1016,6 +1016,98 @@
 </ol>
 <p><strong>Choice:</strong> Option 1: MCP6002</p>
 <p><strong>Rationale:</strong> Meets performance with minimal power and gives two amps for gain + active LPF, it is also the least expensive option.</p>
+<p><strong>C-Voltage regulators</strong> <strong>[Power Components]</strong> </p>
+<blockquote>
+<p>We need a 6V and a 5V voltage regulator to step down from 9 or 12V.
+1. LM2596 <strong>6V</strong></p>
+</blockquote>
+<pre><code>![](LM2596.jpg)
+
+* $6.97/each
+* [Link to LM2596](https://www.digikey.com/en/products/detail/texas-instruments/LM2596S-5.0-NOPB/334842?utm_source=chatgpt.com)
+
+| Pros                                        |     Cons                                                             |
+| ----------------------------------------- | ---------------------------------------------------------------- |
+| Capable of 3 amp output                            | Large size |
+| Adjustable version fives votage flexibility                        | Input Voltage limited to 40V                                          |
+|    |
+</code></pre>
+<ol>
+<li>
+<p>TPS564201DDCR <strong>6V</strong></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../TPS564201DDCR.jpg" data-desc-position="bottom"><img alt="" src="../TPS564201DDCR.jpg"></a></p>
+<ul>
+<li>$1.26/each</li>
+<li><a href="https://www.mouser.com/ProductDetail/Texas-Instruments/TPS564201DDCR?qs=zEmsApcVOkUKQpyzRnH%2FcQ%3D%3D&amp;mgh=1&amp;utm_source=chatgpt.com">Link to TPS564201DDCR</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cheaper</td>
+<td>Over specced</td>
+</tr>
+<tr>
+<td>Highest current capacity at 9 amps</td>
+<td>Requires custom footprint</td>
+</tr>
+<tr>
+<td>Swithching regulator</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>D45V5F5 <strong>5V</strong></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../D24V90F5.jpg" data-desc-position="bottom"><img alt="" src="../D24V90F5.jpg"></a></p>
+<ul>
+<li>$8.95/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/pololu/2843/10451170?utm_source=chatgpt.com">Link to D45V5F5</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Generous votlage range</td>
+<td>Current output limited to 500 mA</td>
+</tr>
+<tr>
+<td>Compact size</td>
+<td>Fixed 5V output</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+<p>D24V90F5 <strong>5V</strong></p>
+<pre><code>![](D24V90F5.jpg)
+
+* $36.82/each
+* [Link to D24V90F5](https://www.digikey.com/en/products/detail/pololu/2866/10451188?utm_source=chatgpt.com)
+
+| Pros                                                              | Cons                |
+| ----------------------------------------------------------------- | ------------------- |
+| Higher amperate raiting                                           | More expensive than MCP6002      |
+| 2.7–6 V supply                                                    | More heat |
+|  |
+</code></pre>
+<p><strong>Choice:</strong> Option 1: MCP6002</p>
+<p><strong>Rationale:</strong> Meets performance with minimal power and gives two amps for gain + active LPF, it is also the least expensive option.</p>
 
 
 
