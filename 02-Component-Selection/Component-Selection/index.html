@@ -554,21 +554,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Major component selection">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#style-2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Style 2
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
     </ul>
@@ -812,21 +797,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Major component selection">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#style-2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Style 2
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
     </ul>
@@ -859,7 +829,7 @@
 <p>Below are examples of what subcomponent options could fullfil the roles of the following components. </p>
 </blockquote>
 <p><em>Table 1: Individual component selection (prox sensor)</em></p>
-<p><strong>Proximity Sensor</strong></p>
+<p><strong>A-Proximity Sensor</strong></p>
 <blockquote>
 <p>It needs to detect a nearby hand/body; analog output; works at 5 V; supports custom active conditioning.
 1. TCRT5000 element (IR LED + phototransistor)</p>
@@ -931,12 +901,42 @@
 </tr>
 </tbody>
 </table>
+<ol>
+<li>Analog Distance Sensor Sharp/Socle (GP2Y0A41SK0F)</li>
+</ol>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../LHI968.jpg" data-desc-position="bottom"><img alt="" src="../LHI968.jpg"></a></p>
+<ul>
+<li>$6/each LHI968</li>
+<li><a href="https://www.digikey.com/en/products/detail/excelitas-technologies/LHI-968-3866/5885894">Link to LHI968</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Good range for hand detection (4-30cm)</td>
+<td>Most expensive option</td>
+</tr>
+<tr>
+<td>Analog voltage readout</td>
+<td>Distance &lt; 4 cm will provide throw away readings and will need to be addressed in design</td>
+</tr>
+<tr>
+<td>High resolution measurements</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 </li>
 </ol>
 <p><strong>Choice:</strong> Option 1: TCRT5000 element</p>
 <p><strong>Rationale:</strong> Analog current/voltage proportional to reflected light and pairs well with a custom MCP6002 gain + active low-pass filter stage to satisfy project requirements. The cost also makes this a viable option.</p>
 <p><em>Table 2: Individual component selection (Op-Amp)</em>
-<strong>Signal Conditioning Op-Amp</strong></p>
+<strong>B-Signal Conditioning Op-Amp</strong></p>
 <blockquote>
 <p>It needs a 5 V single supply, rail-to-rail I/O, low power, enough bandwidth for ~10–50 Hz.
 1. MCP6002 (dual, 1 MHz GBW)</p>
@@ -1016,105 +1016,6 @@
 </ol>
 <p><strong>Choice:</strong> Option 1: MCP6002</p>
 <p><strong>Rationale:</strong> Meets performance with minimal power and gives two amps for gain + active LPF, it is also the least expensive option.</p>
-<h3 id="style-2">Style 2</h3>
-<blockquote>
-<p>Also acceptable, more markdown friendly</p>
-</blockquote>
-<p><strong>Low-Pass Filter</strong></p>
-<ol>
-<li>
-<p>1st-order RC</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image1.png" data-desc-position="bottom"><img alt="" src="../image1.png"></a></p>
-<ul>
-<li>$1/each</li>
-<li><a href="http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366">link to product</a></li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Minimal parts</td>
-<td>Limited attenuation</td>
-</tr>
-<tr>
-<td>Easy to setup</td>
-<td>More ripple vs. 2nd-order</td>
-</tr>
-<tr>
-<td>Meets surface mount constraint of project</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</li>
-<li>
-<p>2nd-order Sallen–Key</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image3.png" data-desc-position="bottom"><img alt="" src="../image3.png"></a></p>
-<ul>
-<li>$1/each</li>
-<li><a href="http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940">Link to product</a></li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>40 dB/dec roll-off</td>
-<td>One more op-amp section</td>
-</tr>
-<tr>
-<td>very smooth ADC input</td>
-<td>More components needed</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</li>
-<li>
-<p>Multiple-pole</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image3.png" data-desc-position="bottom"><img alt="" src="../image3.png"></a></p>
-<ul>
-<li>$1/each</li>
-<li><a href="http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940">Link to product</a></li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>No extra op-amp needed</td>
-<td>Impedance rises</td>
-</tr>
-<tr>
-<td>Stable over operating temperature</td>
-<td>ADC acquisition time needs care</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</li>
-</ol>
-<p><strong>Choice:</strong> Option 2: CTX936TR-ND surface mount oscillator</p>
-<p><strong>Rationale:</strong> A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.</p>
 
 
 
