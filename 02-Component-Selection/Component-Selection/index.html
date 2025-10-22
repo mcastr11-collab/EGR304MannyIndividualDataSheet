@@ -834,7 +834,7 @@
 <p>It needs to detect a nearby hand/body; analog output; works at 5 V; supports custom active conditioning.
 1. TCRT5000 element (IR LED + phototransistor)</p>
 </blockquote>
-<pre><code>![](TCRT5000.jpg)
+<pre><code>![TCRT5000](TCRT5000.jpg)
 
 * $1-2/each TCRT5000
 * [Link to PDV-P8103](https://www.digikey.com/en/products/detail/advanced-photonix/PDV-P8103/480610)
@@ -901,13 +901,13 @@
 </tr>
 </tbody>
 </table>
-<ol>
-<li>Analog Distance Sensor Sharp/Socle (GP2Y0A41SK0F)</li>
-</ol>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../LHI968.jpg" data-desc-position="bottom"><img alt="" src="../LHI968.jpg"></a></p>
+</li>
+<li>
+<p>Analog Distance Sensor Sharp/Socle (GP2Y0A41SK0F)</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="LHGP2Y0A41SK0F.jpg" data-desc-position="bottom"><img alt="" src="LHGP2Y0A41SK0F.jpg"></a></p>
 <ul>
-<li>$6/each LHI968</li>
-<li><a href="https://www.digikey.com/en/products/detail/excelitas-technologies/LHI-968-3866/5885894">Link to LHI968</a></li>
+<li>$13.95/each LHI968</li>
+<li><a href="https://www.pololu.com/product/2464">Link to LHI968</a></li>
 </ul>
 <table>
 <thead>
@@ -1093,21 +1093,39 @@
 </tbody>
 </table>
 </li>
-</ol>
+<li>
 <p>D24V90F5 <strong>5V</strong></p>
-<pre><code>![](D24V90F5.jpg)
-
-* $36.82/each
-* [Link to D24V90F5](https://www.digikey.com/en/products/detail/pololu/2866/10451188?utm_source=chatgpt.com)
-
-| Pros                                                              | Cons                |
-| ----------------------------------------------------------------- | ------------------- |
-| Higher amperate raiting                              | More expensive than MCP6002      |
-| 2.7–6 V supply                                                              | More heat |
-|
-</code></pre>
-<p><strong>Choice:</strong> Option 1: MCP6002</p>
-<p><strong>Rationale:</strong> Meets performance with minimal power and gives two amps for gain + active LPF, it is also the least expensive option.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../D24V90F5.jpg" data-desc-position="bottom"><img alt="D24V90F5" src="../D24V90F5.jpg"></a></p>
+<ul>
+<li>$36.82/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/pololu/2866/10451188?utm_source=chatgpt.com">Link to D24V90F5</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Higher amperate raiting</td>
+<td>More expensive than MCP6002</td>
+</tr>
+<tr>
+<td>2.7–6 V supply</td>
+<td>More heat</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+<p><strong>Choice:</strong> Option 1 &amp; 3: LM2596 and D45V5F5</p>
+<p><strong>Rationale:</strong> Meets project requirements and are flexible enough for what we are trying to do with DC motors.</p>
 
 
 
