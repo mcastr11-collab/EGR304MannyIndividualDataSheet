@@ -843,11 +843,16 @@
   <h1>Schematic</h1>
 
 <h2 id="overview">Overview</h2>
-<p>This schematic is design to support .... (highlight functionally, power, and controller).</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../Screenshot.png" data-desc-position="bottom"><img alt="schematic" height:_300_="height:&quot;300;&quot;" src="../Screenshot.png" style="style" width:_350_="width:&quot;350&quot;"></a>
-<strong>Figure ##:</strong> Showing a example schematic.</p>
+<p>This schematic is designed to comply with the Spark Guard's product requirements with time constraints, resorces, and my own abilities taken into consideration. Below are the schematics I have created for the purpose of completing the vision of our project. The device is powered from a 120V AC to 12V DC adapter, its internal components operate at 5V which is regulated via a 12VDC to 5VDC voltage regulator.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../MAC-Individual-Subsystem-Complex-Filters.jpg" data-desc-position="bottom"><img alt="schematicv1" height:_300_="height:&quot;300;&quot;" src="../MAC-Individual-Subsystem-Complex-Filters.jpg" style="style" width:_350_="width:&quot;350&quot;"></a>
+<strong>Figure 1:</strong> Version 1 of my schematic.
+In this schematic, I tried to leverage filters to capture a specific amplitude leveraging a Goertzel algorithm as a digital signal processor to measure the strenght of specific frequencies. This would have been excellent to capture high intensity voices such as a close whistle or a scree. Although for testing purposes, I decided to put this idea to the side for now until I understand its application with more detail.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../MAC-Individual-Subsystem-Simple-Test-Bed.jpg" data-desc-position="bottom"><img alt="schematicv2" height:_300_="height:&quot;300;&quot;" src="../MAC-Individual-Subsystem-Simple-Test-Bed.jpg" style="style" width:_350_="width:&quot;350&quot;"></a>
+<strong>Figure 2:</strong> Simplified schematic.
+In this schematic, I utilized the same idea from a previous in class lab to send a clean analog signal from the microphone, after a high pass filter, to our Curiosity Nano PIC. It complies with our project requirement of having voice recognition to trigger a digital signal from my PIC to activate a solenoid and open the protective cover of the Spark Guard. This was mainly picked due to time constraints and to reduce development costs for the test bed product.</p>
 <h2 id="resouces">Resouces</h2>
-<p>The schematic as a PDF download is available <a href="../ExampleSchematic.pdf"><em>here</em></a>, and the Zip folder of the project <a href="../dummyZip.zip"><em>here</em></a>.</p>
+<p>The schematic as a PDF download is available <a href="../MAC%20Individual%20Subsystems.pdf"><em>here</em></a>, and the Zip folder of the project schematics <a href="../MAC%20Individual%20Subsystem.zip"><em>here</em></a>.
+Link to resourses of the DSP <a href="http://ww1.microchip.com/downloads/en/devicedoc/70332b.pdf">Geoertzel algorithm</a>.</p>
 
 
 
