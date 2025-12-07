@@ -12,7 +12,7 @@
         <link rel="canonical" href="https://embedded-systems-design.github.io/EGR304DataSheetTemplate/01-Block-Diagram/Block-Diagram/">
       
       
-        <link rel="prev" href="../..">
+        <link rel="prev" href="../../07-Microcontroller%20Code/">
       
       
         <link rel="next" href="../../02-Component-Selection/Component-Selection/">
@@ -215,6 +215,40 @@
         
   
   
+  
+    <li class="md-tabs__item">
+      <a href="../../06-PCB/" class="md-tabs__link">
+        
+  
+    
+  
+  PCB Design
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../07-Microcontroller%20Code/" class="md-tabs__link">
+        
+  
+    
+  
+  Microcontroller Code
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
     
   
   
@@ -408,6 +442,46 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06-PCB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PCB Design
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07-Microcontroller%20Code/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Microcontroller Code
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -432,10 +506,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -446,8 +520,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             01 Block Diagram
           </label>
@@ -734,12 +808,6 @@
       
         
       
-        
-      
-        
-      
-        
-      
     
     
       
@@ -854,25 +922,7 @@ The push button serve as a push to talk to prevent the microphone from always li
 <h2 id="block-diagram">Block Diagram</h2>
 <p>Originally, I had the idea to have a photoresistor work as our trigger for our actuator. I decided against it since we wanted something more secure that would not be triggered by wildlife or children, so I came up wiht a microphone activated actuator sensor. This sensor will process a loud voice, then it feeds it to an op amp for some amplification, then a bandpass filter to remove hisses and rubmlings and other common outdoor noices. The filtered and amplidied signal is then fed into the PIC, which converts the signal from analog to digital so it can decide if the voice was loud enough to trigger a digital out command. If it is, it will send a high signal to the 8 pin connector via a GPIO pin to feed it to Ayush's actuator PCB.</p>
 <p>I have since added a push button to work as a push to talk to only enable the mic when the button is pressed, there are also debug LEDs connected to the mic signal logic, these receive a signal from the PIC to turn on if the PTT (push to talk) button is pressed and if the voice captured by the mic was loud enough to trigger the digital out command.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../IndividualBlockDiagram-MAC.drawio.png" data-desc-position="bottom"><img alt="Indivial Block diagram" src="../IndividualBlockDiagram-MAC.drawio.png"></a><br></p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../Team%20203BlockDiagramFinal.pdf" data-desc-position="bottom"><img alt="Teamblocktest" src="../Team%20203BlockDiagramFinal.pdf"></a></p>
-<object data="https://mcastr11-collab.github.io/EGR304MannyIndividualDataSheet/01-Block-Diagram/Team%20203BlockDiagramFinal.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="https://mcastr11-collab.github.io/EGR304MannyIndividualDataSheet/01-Block-Diagram/Team%20203BlockDiagramFinal.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://mcastr11-collab.github.io/EGR304MannyIndividualDataSheet/01-Block-Diagram/Team%20203BlockDiagramFinal.pdf">Download PDF</a>.</p>
-    
-</object>
-
-<!-- Embed PDF File -->
-<object src="Team 203BlockDiagramFinal.pdf" type="application/pdf" title="SamplePdf" width="500" height="720">
-    <a href="Team 203BlockDiagramFinal.pdf">shree</a> 
-</object>
-
-<p><embed src="Team 203BlockDiagramFinal.pdf" type="application/pdf" width="100%" height="800px" title="Embedded PDF Viewer">
-<br></p>
-<iframe src="Team 203BlockDiagramFinal.pdf" width="100%" height="600px">
-    This browser does not support PDFs. Please download the PDF to view it:
-    <a href="Team 203BlockDiagramFinal.pdf">Download PDF</a>.
-</iframe>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../audiosensordiagram.jpg" data-desc-position="bottom"><img alt="Indivial Block diagram" src="../audiosensordiagram.jpg"></a><br></p>
 
 
 
@@ -911,7 +961,7 @@ The push button serve as a push to talk to prevent the microphone from always li
       <nav class="md-footer__inner md-grid" aria-label="Footer">
         
           
-          <a href="../.." class="md-footer__link md-footer__link--prev" aria-label="Previous: Welcome">
+          <a href="../../07-Microcontroller%20Code/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Microcontroller Code">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
@@ -921,7 +971,7 @@ The push button serve as a push to talk to prevent the microphone from always li
                 Previous
               </span>
               <div class="md-ellipsis">
-                Welcome
+                Microcontroller Code
               </div>
             </div>
           </a>
